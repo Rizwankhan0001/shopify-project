@@ -1,0 +1,70 @@
+.section-page .page__title {
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+}
+
+.page-placeholder-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* ── STATIC PAGE ENHANCEMENTS ── */
+
+/* Page title — maroon with gold underline */
+.section-page .page__title,
+.section-main-page .page__title {
+  color: #910a34;
+  position: relative;
+  padding-bottom: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.section-page .page__title::after,
+.section-main-page .page__title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 56px;
+  height: 3px;
+  background: #e3b90d;
+  border-radius: 2px;
+}
+
+/* Page content typography */
+.section-page .page__content h2,
+.section-page .page__content h3 {
+  color: #910a34;
+  margin-top: 2.5rem;
+}
+
+.section-page .page__content a {
+  color: #910a34;
+  text-decoration-color: rgba(145, 10, 52, 0.3);
+  transition: opacity 0.15s ease;
+}
+
+.section-page .page__content a:hover {
+  opacity: 0.75;
+}
+
+/* Page content blockquote */
+.section-page .page__content blockquote {
+  border-inline-start: 3px solid #e3b90d;
+  background: rgba(227, 185, 13, 0.05);
+  border-radius: 0 8px 8px 0;
+  padding: 1.2rem 1.8rem;
+  margin: 2rem 0;
+}
+
+/* Page content tables */
+.section-page .page__content table th {
+  background-color: rgba(145, 10, 52, 0.06);
+  color: #910a34;
+  font-weight: 700;
+  border-bottom: 2px solid #e3b90d;
+}
+
+.section-page .page__content table tr:hover td {
+  background-color: rgba(227, 185, 13, 0.04);
+}

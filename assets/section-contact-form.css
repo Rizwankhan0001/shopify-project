@@ -1,0 +1,81 @@
+.contact img {
+  max-width: 100%;
+}
+
+.contact .form__error .form__message {
+  font-size: 1.3rem;
+}
+
+.contact .form__error .icon-error {
+  height: 2rem;
+  margin-inline-end: .2rem;
+  width: 2rem;
+}
+
+.contact-form__heading,
+.contact-form__text {
+  margin: 0;
+}
+
+.contact .image-with-text__content {
+  overflow: visible !important;
+}
+
+.contact-form__heading {
+  text-align: start;
+}
+
+/* ── CONTACT FORM ENHANCEMENTS ── */
+
+/* Form container card */
+.section-contact-form .image-with-text__content {
+  border-radius: 12px;
+}
+
+/* Input fields — cleaner focus */
+.section-contact-form .field__input,
+.section-contact-form .text-area,
+.section-contact-form .select__select {
+  border-radius: 8px;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.section-contact-form .field__input:focus,
+.section-contact-form .text-area:focus {
+  box-shadow: 0 0 0 2px rgba(227, 185, 13, 0.35);
+}
+
+/* Label color */
+.section-contact-form .field__label {
+  color: rgba(var(--color-foreground), 0.65);
+}
+
+/* Tip text */
+.section-contact-form .opacity-60 {
+  color: rgba(var(--color-foreground), 0.55);
+  font-size: 1.2rem;
+}
+
+/* Submit button */
+.section-contact-form .button[type="submit"] {
+  background-color: #910a34;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  min-height: 50px;
+  padding: 1em 2.5em;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  box-shadow: none;
+  letter-spacing: 0.04em;
+}
+
+.section-contact-form .button[type="submit"]:hover {
+  background-color: #7a0829;
+  transform: translateY(-2px);
+}
+
+.section-contact-form .button[type="submit"]:after {
+  display: none;
+}

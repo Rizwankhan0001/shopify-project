@@ -1,0 +1,31 @@
+<style type="text/css">
+  .template-404 .title + * {
+    margin-top: 1rem;
+  }
+
+  @media screen and (min-width: 750px) {
+    .template-404 .title + * {
+      margin-top: 2rem;
+    }
+  }
+</style>
+
+<div class="template-404 page-width page-margin center">
+  <p class="caption-with-letter-spacing light t2">
+    {{ 'templates.404.subtext' | t }}
+  </p>
+  <h1 class="b-main-title" style="font-size:clamp(3rem,6vw,5.5rem);color:#910a34;">
+    {{ 'templates.404.title' | t }}
+  </h1>
+  <p style="font-size:1.5rem;opacity:0.65;margin:0 auto 2.5rem;max-width:42rem;line-height:1.6;">
+    The page you're looking for doesn't exist or has been moved.
+  </p>
+  <div style="display:flex;gap:1.2rem;justify-content:center;flex-wrap:wrap;">
+    <a href="{{ routes.root_url }}" class="button" style="background-color:#910a34!important;color:#fff!important;border:none!important;border-radius:6px!important;font-weight:700!important;padding:1em 2.2em!important;box-shadow:none!important;">
+      Go Home
+    </a>
+    <a href="{{ routes.all_products_collection_url }}" class="button" style="background-color:transparent!important;color:#910a34!important;border:2px solid #910a34!important;border-radius:6px!important;font-weight:700!important;padding:1em 2.2em!important;box-shadow:none!important;">
+      {{ 'general.continue_shopping' | t }}
+    </a>
+  </div>
+</div>
